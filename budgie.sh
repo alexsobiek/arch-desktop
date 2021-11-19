@@ -39,8 +39,9 @@ curl https://i.imgur.com/XgCwWhw.png -o background2.png
 # Schema Overrides
 curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie.gschema.override --output-dir /usr/share/glib-2.0/schemas/
 mkdir -p /usr/share/budgie-desktop/layouts
-curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/panel.ini --output-dir /usr/share/budgie-desktop/
+curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie-panel.layout --output-dir /usr/share/budgie-desktop/layouts/
 glib-compile-schemas /usr/share/glib-2.0/schemas
+budgie-panel --reset --replace &
 
 # Programs
 pacman -S gnome-control-center gnome-software gnome-software-packagekit-plugin --noconfirm
