@@ -11,4 +11,4 @@
 [org.gnome.desktop.interface]
     icon-theme='Dracula'
 [org.gnome.desktop.background]
-    picture-uri=file:////usr/share/backgrounds/background1.jpg
+    picture-uri='file:////usr/share/backgrounds/background1.jpg'
