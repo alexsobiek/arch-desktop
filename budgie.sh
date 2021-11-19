@@ -11,7 +11,7 @@ pacman -S budgie-desktop budgie-screensaver --noconfirm
 # LightDM
 pacman -S xorg-server --noconfirm
 pacman -S lightdm lightdm-slick-greeter --noconfirm
-sed -i 's/#greeter-session=example-gtk-gnome/&\ngreeter-session=lightdm-slick-greeter'
+sed -i 's/#greeter-session=example-gtk-gnome/&\ngreeter-session=lightdm-slick-greeter' /etc/lightdm/lightdm.conf
 systemctl enable lightdm
 
 # Juno Theme
