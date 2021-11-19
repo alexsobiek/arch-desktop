@@ -36,13 +36,9 @@ cd /usr/share/backgrounds
 curl https://www.teahub.io/photos/full/123-1238135_arch-linux-wallpapers-colorfull.jpg -o background1.jpg
 curl https://i.imgur.com/XgCwWhw.png -o background2.png
 
-# Budgie Panel
-cd /tmp
-curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie-dconf
-sudo -u lightdm donf load /com/solus-project < budgie-donf
-
 # Schema Overrides
-curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie.gschema.overide --output-dir /usr/share/glib-2.0/schemas/
+curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie.gschema.override --output-dir /usr/share/glib-2.0/schemas/
+curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie-panel.layout --output-dir /usr/share/glib-2.0/schemas/
 glib-compile-schemas /usr/share/glib-2.0/schemas
 
 # Programs

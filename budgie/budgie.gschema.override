@@ -1,14 +1,32 @@
 [org.gnome.desktop.interface]
     gtk-theme='Juno-ocean'
+    icon-theme='Dracula'
 [org.gnome.desktop.wm.preferences]
     theme='Juno-ocean'
-[com.solus-project.budgie-panel]
-    builtin-theme=false
 [com.solus-project.budgie-wm]
     button-layout='close,minimize,maximize:appmenu'
+    button-style='left'
 [org.gnome.desktop.wm.preferences]
     button-layout='close,minimize,maximize:appmenu'
-[org.gnome.desktop.interface]
-    icon-theme='Dracula'
 [org.gnome.desktop.background]
     picture-uri='file:////usr/share/backgrounds/background1.jpg'
+    show-desktop-icons=true
+[org.gnome.nautilus.desktop]
+    home-icon-visible=true
+    network-icon-visible=false
+    trash-icon-visible=true
+    volumes-visible=false
+[com.solus-project.budgie-panel]
+    builtin-theme=false
+    layout='budgie-panel'
+[com.solus-project.budgie-panel.panel]
+    size=42
+    location=bottom
+[x.dm.slick-greeter]
+    background='/usr/share/backgrounds/background1.jpg'
+    icon-theme-name="Dracula"
+
+[org.gnome.desktop.screensaver]
+    picture-uri='file:////usr/share/backgrounds/background1.jpg'
+
+
