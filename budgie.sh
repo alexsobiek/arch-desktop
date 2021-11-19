@@ -48,5 +48,7 @@ pacman -S gnome-system-monitor gnome-control-center gnome-software gnome-softwar
 pacman -S tilix htop neofetch nautilus --noconfirm
 pacman -Sy firefox-developer-edition --noconfirm
 
+echo "if [ \$TILIX_ID ] || [ \$VTE_VERSION ]; then source /etc/profile.d/vte.sh; fi" >> /etc/bash.bashrc
+
 # Done
 systemctl reboot
