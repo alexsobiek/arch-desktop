@@ -2,21 +2,31 @@
 Panels=Bottom Panel
 
 [Bottom Panel]
-Children=Budgie Menu;User Indicator;Icon Tasklist;Tray;Notifications;Status;Clock;Raven Trigger;
+Children=Budgie Menu;Spacer1;User Indicator;Spacer2;Icon Tasklist;Tray;Status;Spacer3;Notifications;Clock;Raven Trigger;
 Position=Bottom
 Size=42
 
 [Budgie Menu]
 ID=Budgie Menu
 
+[Spacer1]
+ID=Spacer
+
 [User Indicator]
 ID=User Indicator
+
+[Spacer2]
+ID=Spacer
 
 [Icon Tasklist]
 ID=Icon Task List
 
 [Tray]
 ID=System Tray
+Alignment=end
+
+[Spacer3]
+ID=Spacer
 Alignment=end
 
 [Notifications]
