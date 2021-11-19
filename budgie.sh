@@ -46,9 +46,7 @@ budgie-panel --reset --replace &
 # Programs
 pacman -S gnome-control-center gnome-software gnome-software-packagekit-plugin --noconfirm
 pacman -S tilix htop neofetch nautilus --noconfirm
-pacman -S firefox-developer-edition --noconfirm
-
-
+pacman -Sy firefox-developer-edition --noconfirm
 
 # Done
 systemctl reboot
