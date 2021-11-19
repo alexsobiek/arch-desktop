@@ -39,7 +39,7 @@ curl https://www.teahub.io/photos/full/123-1238135_arch-linux-wallpapers-colorfu
 # Schema Overrides
 curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie.gschema.override --output-dir /usr/share/glib-2.0/schemas/
 mkdir -p /usr/share/budgie-desktop/layouts
-curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie-panel.layout --output-dir /usr/share/budgie-desktop/layouts/
+curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie-taskbar.layout --output-dir /usr/share/budgie-desktop/layouts/
 glib-compile-schemas /usr/share/glib-2.0/schemas
 budgie-panel --reset --replace &
 
