@@ -1,0 +1,14 @@
+[org.gnome.desktop.interface]
+    gtk-theme='Juno-ocean'
+[org.gnome.desktop.wm.preferences]
+    theme='Juno-ocean'
+[com.solus-project.budgie-panel]
+    builtin-theme=false
+[com.solus-project.budgie-wm]
+    button-layout='close,minimize,maximize:appmenu'
+[org.gnome.desktop.wm.preferences]
+    button-layout='close,minimize,maximize:appmenu'
+[org.gnome.desktop.interface]
+    icon-theme='Dracula'
+[org.gnome.desktop.background]
+    picture-uri=file:////usr/share/backgrounds/background1.jpg
