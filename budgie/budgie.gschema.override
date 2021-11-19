@@ -19,6 +19,4 @@
     button-style='left'
 [com.solus-project.budgie-panel]
     builtin-theme=false
-    layout='budgie-panel'
-
 
