@@ -5,7 +5,8 @@
 # Utility
 pacman -Syu pacman-contrib --noconfirm
 curl -s "https://archlinux.org/mirrorlist/?country=US&country=CA&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 6 - > /etc/pacman.d/mirrorlist=
-pacman -S sudo git --noconfirm
+pacman -S sudo git networkmanager --noconfirm
+systemctl enable networkmanager
 
 # Budgie
 pacman -S budgie-desktop budgie-screensaver --noconfirm
