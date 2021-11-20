@@ -6,7 +6,8 @@
 pacman -Syu pacman-contrib --noconfirm
 curl -s "https://archlinux.org/mirrorlist/?country=US&country=CA&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 6 - > /etc/pacman.d/mirrorlist=
 pacman -S sudo git networkmanager --noconfirm
-systemctl enable networkmanager
+systemctl enable systemd-resolved
+systemctl enable NetworkManager
 
 # Budgie
 pacman -S budgie-desktop budgie-screensaver --noconfirm
@@ -47,6 +48,7 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 budgie-panel --reset --replace &
 
 # Programs
+pacman -S network-manager-applet --noconfirm
 pacman -S gnome-system-monitor gnome-control-center gnome-software gnome-software-packagekit-plugin --noconfirm
 pacman -S tilix htop neofetch nautilus --noconfirm
 pacman -Sy firefox-developer-edition --noconfirm
