@@ -32,9 +32,9 @@ mv Dracula /usr/share/icons
 curl -O https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg --output-dir /usr/share/icons/
 
 # Desktop Background
-cd /usr/share/backgrounds/budgie
-rm default.jpg
-curl https://www.teahub.io/photos/full/123-1238135_arch-linux-wallpapers-colorfull.jpg -o default.jpg
+rm /usr/share/backgrounds/budgie/default.jpg
+# curl https://www.teahub.io/photos/full/123-1238135_arch-linux-wallpapers-colorfull.jpg -o default.jpg
+curl https://w.wallha.com/ws/12/4Ux0dIwl.png -o /usr/share/backgrounds/budgie/default.jpg
 
 # Schema Overrides
 curl -O https://raw.githubusercontent.com/alexsobiek/arch-desktop/main/budgie/budgie.gschema.override --output-dir /usr/share/glib-2.0/schemas/
