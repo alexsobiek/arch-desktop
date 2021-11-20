@@ -22,7 +22,7 @@
     layout='budgie-taskbar'
 [com.solus-project.budgie-menu]
     menu-headers=false
-    menu-icon='/usr/share/icons/Archlinux-icon-crystal-64.svg'
+    menu-icon='/usr/share/icons/Dracula/scalable/apps/distributor-logo-archlinux.svg'
 [com.solus-project.icon-tasklist]
     pinned-launchers=['org.gnome.Nautilus.desktop', 'com.gexperts.Tilix.desktop', 'firefox-developer-edition.desktop']
 [x.dm.slick-greeter]

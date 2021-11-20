@@ -3,6 +3,8 @@
 # Needs to be run as root or with sudo
 
 # Utility
+pacman -Syu pacman-contrib
+curl -s "https://archlinux.org/mirrorlist/?country=US&country=CA&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 6 - > /etc/pacman.d/mirrorlist=
 pacman -S sudo git --noconfirm
 
 # Budgie
@@ -26,8 +28,8 @@ mv /tmp/Juno-ocean /usr/share/themes
 
 # Icon Theme
 cd /tmp
-curl -LO https://github.com/dracula/gtk/files/5214870/Dracula.zip
-bsdtar xf Dracula.zip
+curl -LO https://github.com/dracula/gtk/releases/download/v2.0/Dracula.tar.xz
+bsdtar xf Dracula.tar.xz
 mv Dracula /usr/share/icons
 curl -O https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg --output-dir /usr/share/icons/
 
