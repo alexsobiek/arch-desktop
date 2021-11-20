@@ -28,9 +28,9 @@ mv /tmp/Juno-ocean /usr/share/themes
 
 # Icon Theme
 cd /tmp
-curl -LO https://github.com/dracula/gtk/releases/download/v2.0/Dracula.tar.xz
-bsdtar xf Dracula.tar.xz
-mv Dracula /usr/share/icons
+curl -LO https://codeload.github.com/matheuuus/dracula-icons/zip/refs/heads/main
+bsdtar xf main
+mv dracula-icons-main/ /usr/share/icons/Dracula
 curl -O https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg --output-dir /usr/share/icons/
 
 # Desktop Background
