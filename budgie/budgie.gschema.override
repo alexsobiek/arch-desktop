@@ -9,11 +9,10 @@
     show-desktop-icons=true
 [org.gnome.desktop.screensaver]
     picture-uri='file:///usr/share/backgrounds/budgie/default.jpg'
-[org.gnome.nautilus.desktop]
+[org.nemo.desktop]
+    show-desktop-icons=true
     home-icon-visible=true
-    network-icon-visible=false
-    trash-icon-visible=true
-    volumes-visible=false
+    volumes-visible=true
 [com.solus-project.budgie-wm]
     button-layout='close,minimize,maximize:appmenu'
     button-style='left'
@@ -24,6 +23,6 @@
     menu-headers=false
     menu-icon='/usr/share/icons/Dracula/scalable/apps/distributor-logo-archlinux.svg'
 [com.solus-project.icon-tasklist]
-    pinned-launchers=['org.gnome.Nautilus.desktop', 'com.gexperts.Tilix.desktop', 'firefox-developer-edition.desktop']
+    pinned-launchers=['org.nemo.desktop', 'com.gexperts.Tilix.desktop', 'firefox-developer-edition.desktop']
 [x.dm.slick-greeter]
     background='file:///usr/share/backgrounds/budgie/default.jpg'

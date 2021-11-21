@@ -1,6 +1,6 @@
 # Budige DE install & configuration script
 # This is meant to be VERY similar to Ubuntu Budgie
-# Needs to be run as root or with sudo
+# Must be run as root!
 
 # Utility
 pacman -Syu pacman-contrib --noconfirm
@@ -50,8 +50,11 @@ budgie-panel --reset --replace &
 # Programs
 pacman -S network-manager-applet --noconfirm
 pacman -S gnome-system-monitor gnome-control-center gnome-software gnome-software-packagekit-plugin --noconfirm
-pacman -S tilix htop neofetch nautilus --noconfirm
+pacman -S tilix htop neofetch nemo --noconfirm
 pacman -Sy firefox-developer-edition --noconfirm
+
+touch /etc/xdg/autostart/nemo-desktop.desktop
+printf "[Desktop Entry]\nType=Application\nExec=nemo-desktop\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en_US]=Nemo Desktop\nName=Nemo Desktop" > /etc/xdg/autostart/nemo-desktop.desktop
 
 echo "if [ \$TILIX_ID ] || [ \$VTE_VERSION ]; then source /etc/profile.d/vte.sh; fi" >> /etc/bash.bashrc
 
